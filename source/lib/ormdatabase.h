@@ -3,8 +3,6 @@
 
 #include <QSqlDatabase>
 #include "adapters/sqladapter.h"
-#include "adapters/mysqladapter.h"
-#include "adapters/sqliteadapter.h"
 #include "adapters/postgresqladapter.h"
 
 /*!

@@ -9,8 +9,6 @@
 #include "ormdatabase.cpp"
 #include "adapters/ormabstractadapter.cpp"
 #include "adapters/sqladapter.cpp"
-#include "adapters/mysqladapter.cpp"
-#include "adapters/sqliteadapter.cpp"
 #include "adapters/postgresqladapter.cpp"
 #include "ormobject.h"
 #include "ormwhere.cpp"

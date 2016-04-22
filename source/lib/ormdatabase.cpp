@@ -5,11 +5,7 @@ ORMAbstractAdapter* ORMDatabase::adapter = 0;
 ORMDatabase::ORMDatabase(QString driverName) :
     QSqlDatabase(QSqlDatabase::addDatabase(driverName))
 {
-    if(driverName == "QMYSQL")
-        adapter = new MySqlAdapter();
-    else if(driverName == "QSQLITE")
-        adapter = new SqliteAdapter;
-    else if(driverName == "QPSQL")
+    if(driverName == "QPSQL")
         adapter = new PostgreSQLAdapter;
     else
         adapter = new SqlAdapter;

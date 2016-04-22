@@ -15,27 +15,23 @@ CONFIG += staticlib
 HEADERS += orm.h \
     ormdatabase.h \
     adapters/ormabstractadapter.h \
-    adapters/mysqladapter.h \
     ormwhere.h \
     ormgroupby.h \
     ormorderby.h \
     macros.h \
     ormobject.h \
     adapters/sqladapter.h \
-    adapters/sqliteadapter.h \
     adapters/postgresqladapter.h \
     ormlogger.h
 
 SOURCES += orm.cpp \
     ormdatabase.cpp \
     adapters/ormabstractadapter.cpp \
-    adapters/mysqladapter.cpp \
     ormwhere.cpp \
     ormgroupby.cpp \
     ormorderby.cpp \
     ormobject.cpp \
     adapters/sqladapter.cpp \
-    adapters/sqliteadapter.cpp \
     adapters/postgresqladapter.cpp \
     ormlogger.cpp
 
@@ -47,3 +43,13 @@ unix:!symbian {
     }
     INSTALLS += target
 }
+
+target.path = "C:/Users/Mihaly Balogh/Desktop/test2/lib"
+headers.files = *.h
+headers.path = "C:/Users/Mihaly Balogh/Desktop/test2/include"
+adapters.files = adapters/*.h
+adapters.path = "C:/Users/Mihaly Balogh/Desktop/test2/include/adapters"
+
+INSTALLS += adapters
+INSTALLS += headers
+INSTALLS += target
