@@ -17,4 +17,4 @@ TEMPLATE = app
 
 
 SOURCES += tst_test_ormorderby.cpp
-DEFINES += SRCDIR=\\\"$$PWD/\\\"
+DEFINES += SRCDIR=\"$$PWD/\"

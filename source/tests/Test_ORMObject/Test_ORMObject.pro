@@ -20,4 +20,4 @@ HEADERS += ../../lib/ormobject.h
 
 SOURCES += ../../lib/ormobject.cpp tst_test_ormobject.cpp
 
-DEFINES += SRCDIR=\\\"$$PWD/\\\"
+DEFINES += SRCDIR=\"$$PWD/\"

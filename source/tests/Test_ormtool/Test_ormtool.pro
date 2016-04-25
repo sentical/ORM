@@ -16,4 +16,4 @@ TEMPLATE = app
 INCLUDEPATH += ../../ormtool
 
 SOURCES += tst_test_ormtool.cpp
-DEFINES += SRCDIR=\\\"$$PWD/\\\"
+DEFINES += SRCDIR=\"$$PWD/\"

@@ -17,4 +17,4 @@ TEMPLATE = app
 INCLUDEPATH += ../../lib
 
 SOURCES += tst_test_ormgroupby.cpp
-DEFINES += SRCDIR=\\\"$$PWD/\\\"
+DEFINES += SRCDIR=\"$$PWD/\"

@@ -16,4 +16,4 @@ INCLUDEPATH += ../../lib
 TEMPLATE = app
 
 SOURCES += tst_test_ormdatabase.cpp
-DEFINES += SRCDIR=\\\"$$PWD/\\\"
+DEFINES += SRCDIR=\"$$PWD/\"
