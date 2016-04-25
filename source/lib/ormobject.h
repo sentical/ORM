@@ -12,6 +12,9 @@
 #include "ormorderby.h"
 #include "macros.h"
 
+template <class ModelName>
+struct Columns {};
+
 /*!
    \class ORMObject
    \brief The ORMObject is a base class for all your models.
@@ -33,6 +36,11 @@ template<class ModelName>
 class ORMObject : public QObject
 {
 public:
+    typedef Columns<typename ModelName> Columns;
+protected:
+    Columns c;
+public:
+
     /*!
        Creates empty ORMObject with \a parent QObject.
      */

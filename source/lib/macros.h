@@ -10,21 +10,19 @@
    and public getter and setter.
  */
 
-#define ORM_PROPERTY(type, name) \
-    Q_PROPERTY(type name READ get##name WRITE set##name) \
-    private: \
-    type name; \
+#define ORM_PROPERTY(type, name, field) \
+    Q_PROPERTY(type field READ get##name WRITE set##name) \
     public: \
     type get##name() const \
     { \
-        return name; \
+        return c.m_##name; \
     } \
     void set##name(type input_##name)  \
     { \
-        name = input_##name; \
+        c.m_##name = input_##name; \
         m_hasUnsavedChanges = true; \
-        if(!m_propertiesForUpdate.contains(#name)) \
-            m_propertiesForUpdate.append(#name); \
+        if(!m_propertiesForUpdate.contains(#field)) \
+            m_propertiesForUpdate.append(#field); \
     }
 
 /*!
